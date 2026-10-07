@@ -123,15 +123,29 @@
 
 // App.tsx
 import { useEffect } from "react";
-import { filterMealsByArea, filterMealsByCategory, searchMealsByName, getMealById, getCategories } from "./api/mealDb.ts";
+//import { filterMealsByArea, filterMealsByCategory, searchMealsByName, getMealById, getCategories } from "./api/mealDb.ts";
+// import { displayMeals } from "./utils/meals";
+// import type { Meal } from "./types/meal";
+
+// const fakeMeals: Meal[] = [
+//   { idMeal: "1", strMeal: "Chicken Handi", strCategory: "Chicken", strArea: "Indian",
+//     strInstructions: "", strMealThumb: "", ingredients: [] },
+//   { idMeal: "2", strMeal: "Beef Wellington", strCategory: "Beef", strArea: "British",
+//     strInstructions: "", strMealThumb: "", ingredients: [] },
+//   { idMeal: "3", strMeal: "Apple Tart", strCategory: "Dessert", strArea: null,
+//     strInstructions: "", strMealThumb: "", ingredients: [] },
+// ];
 
 function App() {
   useEffect(() => {
-    filterMealsByCategory("seafood").then(console.log);
+    //filterMealsByCategory("seafood").then(console.log);
     //searchMealsByName("beef").then(console.log);
     //filterMealsByArea("india").then(console.log);
     //getMealById("52772").then(console.log);
     //getCategories().then(console.log);
+    // console.log("search 'CHICK ':", displayMeals(fakeMeals, "CHICK ", "strMeal", "asc"));
+    // console.log("empty search, name desc:", displayMeals(fakeMeals, "", "strMeal", "desc").map(m => m.strMeal));
+    // console.log("sort by area asc:", displayMeals(fakeMeals, "", "strArea", "asc").map(m => m.strMeal));
   }, []);
 
   return <h1>Recipe box</h1>;
