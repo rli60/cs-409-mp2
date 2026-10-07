@@ -18,13 +18,16 @@ export function filterMealsBySearch(meals: Meal[], search: string): Meal[] {
     return filteredMeals;
 }
 
+export type SortType = "strMeal" | "strCategory" | "strArea";
+export type SortDir = "asc" | "desc";
+
 // Sort meals
 // sortType: strMeal, strCategory, strArea
 // sortDir: asc, desc
 export function sortMeals(
     meals: Meal[], 
-    sortType: "strMeal" | "strCategory" | "strArea", 
-    sortDir: "asc" | "desc"
+    sortType: SortType, 
+    sortDir: SortDir
 ): Meal[] {
     const sortTypeMeals: Meal[] = [...meals].sort((a, b) => {
         const aVal = a[sortType] ?? "";
