@@ -122,7 +122,7 @@
 // export default App
 
 // App.tsx
-import { useEffect } from "react";
+// import { useEffect } from "react";
 //import { filterMealsByArea, filterMealsByCategory, searchMealsByName, getMealById, getCategories } from "./api/mealDb.ts";
 // import { displayMeals } from "./utils/meals";
 // import type { Meal } from "./types/meal";
@@ -136,8 +136,13 @@ import { useEffect } from "react";
 //     strInstructions: "", strMealThumb: "", ingredients: [] },
 // ];
 
+import { Routes, Route } from "react-router-dom";
+import SearchPage from "./pages/SearchPage";
+import GalleryPage from "./pages/GalleryPage";
+import MealDetailPage from "./pages/MealDetailPage";
+
 function App() {
-  useEffect(() => {
+  //useEffect(() => {
     //filterMealsByCategory("seafood").then(console.log);
     //searchMealsByName("beef").then(console.log);
     //filterMealsByArea("india").then(console.log);
@@ -146,9 +151,15 @@ function App() {
     // console.log("search 'CHICK ':", displayMeals(fakeMeals, "CHICK ", "strMeal", "asc"));
     // console.log("empty search, name desc:", displayMeals(fakeMeals, "", "strMeal", "desc").map(m => m.strMeal));
     // console.log("sort by area asc:", displayMeals(fakeMeals, "", "strArea", "asc").map(m => m.strMeal));
-  }, []);
+  //}, []);
 
-  return <h1>Recipe box</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<SearchPage />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+      <Route path="/recipe/:id" element={<MealDetailPage />} />
+    </Routes>
+  )
 }
 
 export default App;

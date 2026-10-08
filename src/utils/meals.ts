@@ -46,8 +46,8 @@ export function sortMeals(
 export function displayMeals(
     meals: Meal[], 
     search: string,
-    sortType: "strMeal" | "strCategory" | "strArea", 
-    sortDir: "asc" | "desc"
+    sortType: SortType, 
+    sortDir: SortDir
 ): Meal[] {
     const filteredMeals: Meal[] = filterMealsBySearch(meals, search);
     const sortedMeals: Meal[] = sortMeals(filteredMeals, sortType, sortDir);

@@ -110,3 +110,19 @@ export async function getCategories(): Promise<string[]> {
 
     return categories;
 }
+
+// Return all recipes (gallery)
+export async function getAllMeals(): Promise<MealSummary[]> {
+    const categories = await getCategories();
+
+    const results = await Promise.all(
+        categories.map(category => filterMealsByCategory(category))
+    );
+
+    const combinedMeals = results.flat();
+    const uniqueMeals = Array.from(
+        new Map(combinedMeals.map(meal => [meal.idMeal, meal])).values()
+    );
+
+    return uniqueMeals;
+}
