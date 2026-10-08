@@ -5,6 +5,7 @@ import { getMealById } from "../api/mealDb";
 import type { Meal } from "../types/meal";
 import MealNavigation from "../components/MealNavigation";
 import { Link } from "react-router-dom";
+import "./MealDetailPage.css";
 
 function MealDetailPage() {
     const { id } = useParams();
@@ -63,13 +64,15 @@ function MealDetailPage() {
         <div className="meal-detail">
 
             <div className="detail-navigation">
-                <Link to="/">
-                    <button>List</button>
-                </Link>
+                <div className="buttons">
+                    <Link to="/">
+                        <button>List</button>
+                    </Link>
 
-                <Link to="/recipe/gallery">
-                    <button>Gallery</button>
-                </Link>
+                    <Link to="/gallery">
+                        <button>Gallery</button>
+                    </Link>
+                </div>
             </div>
 
             <MealNavigation meals={meals} currentMealId={meal.idMeal}/>

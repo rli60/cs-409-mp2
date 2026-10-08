@@ -55,7 +55,7 @@ function GalleryPage() {
                 onChange={setSelectedCategories}
             />
 
-            {loading && <p>Loading recipes...</p>}
+            {loading && <b><p>Loading recipes...</p></b>}
 
             {error && <p>{error}</p>}
 

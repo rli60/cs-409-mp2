@@ -1,0 +1,15 @@
+.meal-navigation button {
+    color: #5c3b20;
+    background-color: #fffaf2;
+    border: 2px solid #e6b566;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}

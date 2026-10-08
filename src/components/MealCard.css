@@ -1,0 +1,25 @@
+.meal-card {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.meal-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.meal-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.meal-card a div {
+    width: 100%;
+    overflow-wrap: break-word;
+    margin-top: 8px;
+}

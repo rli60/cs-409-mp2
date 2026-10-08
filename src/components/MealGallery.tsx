@@ -1,6 +1,7 @@
 // Displays meals as a gallery
 import type { MealSummary } from "../types/meal";
 import MealCard from "./MealCard";
+import "./MealGallery.css"
 
 function MealGallery({ meals }: { meals: MealSummary[] }) {
     return (

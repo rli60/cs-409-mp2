@@ -1,6 +1,7 @@
 // Multi-select buttons
 import { useEffect, useState } from "react";
 import { getCategories } from "../api/mealDb";
+import "./CategoryFilter.css";
 
 interface CategoryFilterProps {
     selectedCategories: string[];

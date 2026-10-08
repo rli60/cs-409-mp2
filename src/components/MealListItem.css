@@ -1,0 +1,38 @@
+.list-item {
+    padding: 20px;
+    background-color: rgb(255, 220, 155);
+    margin: 20px 0;
+    border: 2px solid orange;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.list-item a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.meal-img {
+    flex-shrink: 0;
+}
+
+.meal-description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: black;
+}
+
+.meal-description p {
+    margin: 0;
+}

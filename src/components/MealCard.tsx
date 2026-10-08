@@ -1,6 +1,7 @@
 // Used in the gallery filter
 import { Link } from "react-router-dom";
 import type { MealSummary } from "../types/meal";
+import "./MealCard.css";
 
 interface MealCardProps {
     meal: MealSummary;

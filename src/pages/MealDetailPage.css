@@ -1,0 +1,81 @@
+.meal-detail img {
+    width: 300px;
+    height: 300px;
+    border: 3px solid orange;
+}
+
+.meal-detail {
+    padding: 20px;
+}
+
+.detail-navigation {
+    text-align: center;
+    padding: 10px;
+}
+
+.detail-navigation button {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meal-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+.meal-info p {
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #ffedcc;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+
+.ingredients {
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: #fffaf2;
+    border: 1px solid #e6c9a3;
+    border-radius: 12px;
+}
+
+.ingredients h2, .instructions h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.ingredients ul {
+    padding-left: 24px;
+    margin-bottom: 0;
+    line-height: 1.9;
+}
+
+.instructions {
+    padding: 24px;
+    background-color: #fffaf2;
+    border: 1px solid #e6c9a3;
+    border-radius: 12px;
+    line-height: 1.9;
+}
+
+.instructions p {
+    margin-bottom: 0;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}

@@ -1,5 +1,6 @@
 // Sorting logic
 import type { SortType, SortDir } from "../utils/meals";
+import "./SortControls.css";
 
 interface SortControlsProps {
     sortType: SortType;

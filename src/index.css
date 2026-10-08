@@ -48,7 +48,7 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
-}
+} */
 
 #root {
   width: 1126px;
@@ -64,9 +64,16 @@
 
 body {
   margin: 0;
+  background-color: rgb(232, 232, 232);
+  color: #4a3524;
+  font-family: Arial, sans-serif;
 }
 
-h1,
+img {
+  border-radius: 10%;
+}
+
+/* h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;

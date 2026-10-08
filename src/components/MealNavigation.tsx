@@ -1,6 +1,7 @@
 // Previous and next arrows
 import { Link } from "react-router-dom";
 import type { Meal } from "../types/meal";
+import "./MealNavigation.css";
 
 interface MealNavigationProps {
     meals: Meal[];
@@ -22,12 +23,14 @@ function MealNavigation({ meals, currentMealId }: MealNavigationProps) {
 
     return (
         <div className="meal-navigation">
-            <Link to={`/recipe/${previousMeal.idMeal}`} state={{ meals }}>
-                ← Previous
-            </Link>
-            <Link to={`/recipe/${nextMeal.idMeal}`} state={{ meals }}>
-                Next →
-            </Link>
+            <div className="nav-buttons">
+                <Link to={`/recipe/${previousMeal.idMeal}`} state={{ meals }}>
+                    <button>← Previous</button>
+                </Link>
+                <Link to={`/recipe/${nextMeal.idMeal}`} state={{ meals }}>
+                    <button>Next →</button>
+                </Link>
+            </div>
         </div>
     );
 }

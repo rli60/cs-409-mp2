@@ -1,6 +1,7 @@
 // Displays meals as a list
 import type { Meal } from "../types/meal";
 import MealListItem from "./MealListItem";
+import "./MealList.css";
 
 function MealList({ meals }: { meals: Meal[] }) {
     return (

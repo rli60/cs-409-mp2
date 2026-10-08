@@ -15,7 +15,7 @@ function SearchPage() {
     const [sortDir, setSortDir] = useState<SortDir>("asc");
 
     if (loading) {
-        return <h2><b>Loading recipes...</b></h2>;
+        return <h1>Loading recipes...</h1>;
     }
 
     if (error) {
@@ -26,12 +26,15 @@ function SearchPage() {
 
     return (
         <div>
+            
             <ViewOption />
 
             <SearchBar
                 value={search}
                 onChange={setSearch}
             />
+
+            <b><h3>Sort by</h3></b>
 
             <SortControls
                 sortType={sortType}
